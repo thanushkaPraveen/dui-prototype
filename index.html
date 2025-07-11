@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIU Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="diu-screen">
+        <div class="header">
+            <span id="current-speed">Speed: 0 km/h</span>
+            <span id="time">10:30 AM</span>
+        </div>
+
+        <div id="map-area">
+            <img id="placeholder-map-img" src="map_route_example.jpg" alt="Map" style="width:100%; height:100%; object-fit: cover;">
+            <div id="route-display">Your Route: Not set</div>
+            <div id="alert-message"></div>
+        </div>
+
+        <div class="controls">
+            <button id="save-route-btn">Save Route</button>
+            <div class="passenger-input">
+                <span>Passengers:</span>
+                <button id="minus-btn">-</button>
+                <span id="passenger-count">1</span>
+                <button id="plus-btn">+</button>
+            </div>
+            <button id="send-data-btn">Start Trip & Send Data</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
