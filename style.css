@@ -5,13 +5,13 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #333; /* Dark background for the outside */
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif; /* Using Inter font as per guidelines */
     color: #eee;
 }
 
 #diu-screen {
     width: 800px; /* Adjust as needed for your desired DIU size */
-    height: 480px; /* Typical screen aspect ratio */
+    height: 580px; /* Typical screen aspect ratio */
     background-color: #222;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.5); /* Glowing effect */
@@ -24,6 +24,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Vertically center items */
     padding: 10px 20px;
     background-color: #1a1a1a;
     font-size: 1.2em;
@@ -40,12 +41,9 @@ body {
     overflow: hidden; /* Important for background-size: cover */
 }
 
-#map-area img {
-    /* Style for the initial placeholder image */
+#google-map {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    display: block; /* Remove extra space below image */
 }
 
 #route-display {
@@ -77,11 +75,13 @@ body {
 
 .controls {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if space is tight */
+    justify-content: space-around; /* Distribute items with space around them */
+    align-items: center; /* Vertically center items */
     padding: 15px 20px;
     background-color: #1a1a1a;
     border-top: 1px solid #444;
+    gap: 15px; /* Add space between flex items */
 }
 
 button {
@@ -92,18 +92,31 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-size: 1em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Add subtle shadow */
+    min-width: 120px; /* Ensure buttons have a minimum width */
 }
 
 button:hover {
     background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    box-shadow: none;
 }
 
 .passenger-input {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Space between passenger elements */
     font-size: 1.1em;
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 }
 
 .passenger-input button {
@@ -116,4 +129,28 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-shrink: 0; /* Prevent buttons from shrinking */
+    background-color: #6c757d; /* Muted color for +/- buttons */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.passenger-input button:hover {
+    background-color: #5a6268;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.route-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between load route elements */
+    font-size: 1.1em;
+}
+
+#saved-routes-dropdown {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #eee;
+    font-size: 1em;
+    min-width: 180px; /* Ensure dropdown has enough width */
 }
