@@ -30,7 +30,7 @@ To run this prototype locally, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [[https://github.com/YourUsername/your-repo-name.git](https://github.com/thanushkaPraveen/dui-prototype.git)]([https://github.com/YourUsername/your-repo-name.git](https://github.com/thanushkaPraveen/dui-prototype.git))
+    git clone [https://github.com/thanushkaPraveen/dui-prototype.git](https://github.com/thanushkaPraveen/dui-prototype.git)
     cd dui-prototype
     ```
 
