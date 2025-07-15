@@ -30,8 +30,8 @@ To run this prototype locally, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/YourUsername/your-repo-name.git](https://github.com/YourUsername/your-repo-name.git)
-    cd your-repo-name
+    git clone [[https://github.com/YourUsername/your-repo-name.git](https://github.com/thanushkaPraveen/dui-prototype.git)]([https://github.com/YourUsername/your-repo-name.git](https://github.com/thanushkaPraveen/dui-prototype.git))
+    cd dui-prototype
     ```
 
 2.  **Obtain a Google Maps API Key:**
