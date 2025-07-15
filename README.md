@@ -4,6 +4,10 @@
 
 This project is a web-based prototype of a Driver Interface Unit (DIU), a key component of an Intelligent Transportation System (ITS). It demonstrates real-time traffic management, personalized routing, safety alerts, and smart city features like parking availability. The goal is to showcase how an ITS can reduce congestion, lower emissions, and enhance overall urban transport safety.
 
+## Prototype Screenshot
+
+![DIU Prototype Screenshot](images/diu-prototype.png)
+
 ## Features
 
 * **Interactive Google Map:** Displays real-time map data.
